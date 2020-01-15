@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="joy" type="joy_node" name="joy" />
+    <node pkg="tello" type="command.py" name="tello_node_command" />
+    <node pkg="tello" type="video_stream.py" name="tello_node_video" />
+    <node pkg="tello" type="blob.py" name="tello_node_blob" />
+    <node pkg="tello" type="state.py" name="tello_node_state" />
+    <!--node pkg="tello" type="tracker.py" name="tello_node_tracker" /-->
+</launch>
